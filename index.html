@@ -14,7 +14,10 @@
               "White": "#FFFFFF",
               "Textblue": "#0E38CD",
               "Textgray": "#4F547B",
-              "Numblue": "#0094E7"
+              "Numblue": "#0094E7",
+              "bgblue":"#D9ECFF",
+              "bgwhite":"#F0F3FF",
+              "Textblack":"#000000"
             },
           },
           fontFamily: {
@@ -41,8 +44,7 @@
     <link
       rel="shortcut icon"
       href="Assets/Courseroundicon.png"
-      type="image/x-icon"
-    />
+      type="image/x-icon"/>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -51,8 +53,8 @@
       
     />
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Righteous&family=Rowdies&family=Saira&family=Inter:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&family=Rowdies&family=Saira&family=Inter:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
@@ -91,7 +93,9 @@
           <div class="flex">
             <div class=" container ml-24 font-Righteous">
               <p class="pt-20 text-sm font-Righteous uppercase text-white">Successful coaches are visionaries</p>
-              <h1 class=" font-Righteous text-white text-6xl py-6">Good <span class="text-Textblue"> coaching</span> is <br> good teaching & <br> nothing else.</h1>
+              <h1 class=" font-Righteous text-white text-6xl py-6">Good 
+                <span class="text-Textblue"> coaching</span> is <br> good teaching & <br> nothing else.
+              </h1>
               <ul class="mt-5 flex  ">
                   <li class="px-6 py-2 border rounded-md text-white  ">View Courses</li>
                   <li class="px-6 py-2 text-white" >Get Free Consultation</li>
@@ -101,23 +105,26 @@
               
                 <button type="button" class=" flex items-center space-x-1 bg-gradient-to-r from-Blue to-Purple text-white py-2 px-4 rounded-lg" >
                   <img src="Assets/Searchicon.svg" alt="" class="w-4 h-4 text-white "fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <span class="text-white ">Search</span></button>
-             
-              </div>
+                  <span class="text-white ">Search</span>
+                 </button>
+                </div>
              </div>
              <!-- left side completed -->
               <!-- Right side -->
-              <div class="container flex">
-                <div class="flex items-start space-x-1 mt-10 py-16 ">
+              <div class=" flex">
+                <div class="flex items-start space-x-1 mt-10 py-16 absolute scale-75 left-1/2 ">
                   <img src="Assets/Vline.png" alt="" class=" ">
                
-                <p class="font-Righteous text-white py-2 px-2 text-sm"> <span class="font-Rowdies ">Shyam</span> <br> In a coaching role, you ask the <br> questions and rely more on your <br> 
-                  staff, who become the experts, to <br> provide the information. <br> <span class="font-Inter text-Numblue">4.9</span></p>
+                <p class="font-Righteous text-white py-2 px-2 text-sm">
+                  <span class="font-Rowdies ">Shyam</span>
+                   <br> In a coaching role, you ask the <br> questions and rely more on your <br> 
+                  staff, who become the experts, to <br> provide the information. <br> 
+                  <span class="font-Inter text-Numblue">4.9</span></p>
                  
                 </div>
-                  <div class="flex flex-1 relative ">
-                    <img src="Assets/brunette-woman-hugging-laptop_1-removebg-preview.png" alt="" class="">
-                    <img src="Assets/Ellipse 8324.png" alt="" class=" absolute flex-1">
+                  <div class=" flex relative ">
+                    <img src="Assets/brunette-woman-hugging-laptop_1-removebg-preview.png" alt="" class="absolute bottom-0 right-0 px-10">
+                    <img src="Assets/Ellipse 8324.png" alt="" class="flex-1 left-0 ">
                  
                   </div>
                    </div>
@@ -134,12 +141,41 @@
                      </div>
               
                     </div>
+                    <!-- Header Botttom -->
+                    <div class=" bg-[url('Assets/Hbarbg.png')]">
+                      <div class="container flex scale-75 justify-center justify-around  py-2 ">
+                        <img src="Assets/Spotify.png" alt="" class="h-1/2 py-4">
+                        <img src="Assets/Amazon.png" alt="" class="h-1/2 py-4">
+                        <img src="Assets/Spotify.png" alt="" class="h-1/2 py-4">
+                        <img src="Assets/ciscos.png" alt="" class="h-1/2 py-4 ">
+                        <img src="Assets/Logitec.png" alt=""class="h-1/2 py-4 ">
+                        <img src="Assets/Amazon.png" alt=""class="h-1/2 py-4 ">
+                      </div>
+                    </div>
+                  </section>
+                </header>
+          <!-- Header Bottom Completed -->
+          <!-- Hero Section Completed -->
+           <section class="bg-gradient-to-t from-bgblue to-bgwhite">
+            <div class="container text-center py-20 ">
+              <h1 class="font-Rowdies  text-2xl">
+                <span><img src="Assets/Courseroundicon.png" alt="" class="flex flex-1 items-center absolute left-48 scale-75 ">
+                </span>Featured <span class="text-Textblue">Course</span></h1>
+               <p class=" font-Righteous tracking-wide uppercase text-Textblack">The feature courses are we invented our teaching part</p>
+              </div>
             
-          </section>
-      </header>
+              <div class="container grid grid-cols-3 gap-10  scale-90 justify-center">
+                <img src="Assets/Course1.png" alt="">
+                <img src="Assets/Course2.png" alt="">
+                <img src="Assets/Course3 (2).png" alt=""  >
+                <img src="Assets/Course4 (2).png" alt="">
+                <img src="Assets/Course5.png" alt="">
+                <img src="Assets/Clourse6.png" alt="">
+              </div>
+               
+            
+             
+            </section>
 
-
-
-  
-  </body>
-</html>
+          </body>
+       </html>
