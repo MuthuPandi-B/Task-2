@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              Blue: "#083F9B",
+              Purple: "#7F56D9",
+              White: "#FFFFFF",
+              Textblue: "#0E38CD",
+              Textgray: "#4F547B",
+              Numblue: "#0094E7",
+              bgblue: "#D9ECFF",
+              bgwhite: "#F0F3FF",
+              Textblack: "#000000",
+              bg1: "#739FE8",
+              bg2: "#6059D9",
+              bg3: "#4F18CA",
+              fbg1: "#477AE3",
+              fbg2: "#6D4AD0",
+              fbg3: "#931BBD",
+              fbg4: "#001AFF",
+            },
+          },
+          fontFamily: {
+            DMSeriff: ["DM Serif Text,sans-serif"],
+            Saira: ["Saira ,sans-serif"],
+            Rowdies: ["Rowdies ,sans-serif"],
+            Righteous: ["Righteous,sans-serif"],
+            Inter: ["Inter,sans-serif"],
+          },
+          container: {
+            padding: "2rem",
+            screens: {
+              lg: "1024px",
+              xl: "1440px",
+              "2xl": "1440px",
+            },
+          },
+        },
+      };
+    </script>
+    <title>Askmeindenty</title>
+    <link
+      rel="shortcut icon"
+      href="Assets/Courseroundicon.png"
+      type="image/x-icon"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Righteous&family=Rowdies&family=Saira&family=Inter:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+       <!-- Header Part -->
+    <!-- Navigation Part -->
+  <header class="bg-White">
+    <nav class="container flex items-center justify-between py-3">
+      <!-- Logo Section -->
+      <div class="w-3/4 mr-16">
+        <img src="Assets/Askmeidentitytop.png" alt="Logo" />
+      </div>
+  
+      <!-- Menu Section -->
+      <div class="hidden md:flex">
+        <ul class="flex justify-center gap-10 font-Righteous pb-3">
+          <li>Home</li>
+          <li>About</li>
+          <li>Courses</li>
+          <li>Contact</li>
+        </ul>
+      </div>
+  
+      <!-- Cart Section -->
+      <div class="hidden md:flex ml-28 w-3/5 pb-6">
+        <img src="Assets/Carticon.png" alt="Cart Icon" />
+      </div>
+  
+      <!-- Login/Signup Section -->
+      <div class="hidden md:flex list-none justify-end gap-3">
+        <li class="font-Saira underline px-8 py-3">Login</li>
+        <li class="font-Saira px-8 py-3 rounded-md bg-gradient-to-r from-Blue to-Purple text-white">
+          Signup
+        </li>
+      </div>
+  
+      <!-- Mobile Menu Toggle -->
+      <div class="md:hidden">
+        <button id="menu-toggle" class="focus:outline-none">
+          <i class="fas fa-bars text-2xl"></i>
+        </button>
+      </div>
+    </nav>
+  
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden flex flex-col gap-4 items-center mt-4 md:hidden">
+      <ul class="list-none text-center font-Righteous">
+        <li>Home</li>
+        <li>About</li>
+        <li>Courses</li>
+        <li>Contact</li>
+      </ul>
+      <div class="flex gap-4 mt-4">
+        <button class="font-Saira underline px-4 py-2">Login</button>
+        <button
+          class="font-Saira px-4 py-2 rounded-md bg-gradient-to-r from-Blue to-Purple text-white"
+        >
+          Signup
+        </button>
+      </div>
+    </div>
+  </header>
+
+    <!-- Hero Section -->
+  <section class="bg-gradient-to-r from-Purple to-Blue">
+    <div class="flex flex-col md:flex-row">
+      <!-- Left Section -->
+      <div class="container ml-6 md:ml-24 font-Righteous text-center md:text-left">
+        <p class="pt-10 md:pt-20 text-xs sm:text-sm uppercase text-white">
+          Successful coaches are visionaries
+        </p>
+        <h1 class="text-white text-3xl md:text-6xl py-4">
+          Good <span class="text-Textblue">coaching</span> is <br />
+          good teaching & <br /> nothing else.
+        </h1>
+        <ul class="mt-4 flex flex-col sm:flex-row gap-4">
+          <li class="px-6 py-2 border rounded-md text-white">View Courses</li>
+          <li class="px-6 py-2 text-white">Get Free Consultation</li>
+        </ul>
+        <div
+          class="bg-white w-full sm:w-5/6 mt-6 rounded-lg flex items-center shadow-lg p-2"
+        >
+          <input
+            type="text"
+            placeholder="What do you want to learn today?"
+            class="flex-grow p-2 text-Textgray focus:outline-none"
+          />
+          <button
+            type="button"
+            class="bg-gradient-to-r from-Blue to-Purple text-white px-4 py-2 rounded-md"
+          >
+            Search
+          </button>
+        </div>
+      </div>
+      
+      <!-- Right Section -->
+      <div class="flex justify-center relative mt-8 md:mt-0">
+        <img
+          src="Assets/brunette-woman-hugging-laptop_1-removebg-preview.png"
+          alt=""
+          class="w-48 sm:w-72 lg:w-96"
+        />
+      </div>
+    </div>
+  </section>
+  
